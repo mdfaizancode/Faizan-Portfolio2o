@@ -2,13 +2,13 @@
 
 ## Installation
 To install the required dependencies, run the following command:
-sh
+
 npm install
 
 
 ## Usage
 To start the application, use the command:
-sh
+
 npm start
 
 
