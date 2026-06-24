@@ -13,6 +13,21 @@
 
 .blog-heading-div {
   display: flex;
+  margin-top: 100px;
+}
+
+.contact-heading-img-div .profile-pic {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 16px;
+  border: 4px solid #e3405f;
+  box-shadow: 0 8px 30px rgba(227, 64, 95, 0.45);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-heading-img-div .profile-pic:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 45px rgba(252, 16, 86, 0.6);
 }
 
 .address-heading-div {
@@ -36,11 +51,6 @@
   margin-left: 13%;
   margin-bottom: 8%;
   margin-top: 4%;
-}
-
-.profile-pic {
-  box-shadow: 0 5px 15px #353535;
-  border-radius: 4px;
 }
 
 .blog-heading-img-div {

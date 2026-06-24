@@ -9,11 +9,17 @@ function DegreeCard(props) {
 
   const style_img = style({
     width: "220px",
-    height: "auto",
-    borderRadius: " 50%",
-    padding: "10px",
+    height: "220px",
+    flexShrink: 0,
+    borderRadius: "50%",
+    overflow: "hidden",
+    padding: "8px",
     border: `1px solid ${theme.text}`,
     marginRight: "50px",
+    backgroundColor: "#fff",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     boxShadow: `0px 0px 2px ${theme.text}`,
     transition: "all 0.2s ease-in-out",
     ":hover": {
@@ -24,6 +30,7 @@ function DegreeCard(props) {
       marginLeft: "50px",
       marginBottom: "15px",
       width: "175px",
+      height: "175px",
     },
   });
 
@@ -71,9 +78,9 @@ function DegreeCard(props) {
         <div {...style_img}>
           <img
             style={{
-              maxWidth: "100%",
-              maxHeight: "100%",
-              transform: "scale(50%, 50%)",
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
             }}
             src={require(`../../assests/images/${degree.logo_path}`)}
             alt={degree.alt_name}
