@@ -52,15 +52,17 @@ function Projects(props) {
       <br />
       <br />
       <br />
-      <a
-        {...styles}
-        className="general-btn"
-        href={socialMediaLinks.github}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        More Projects (Github)
-      </a>
+      {socialMediaLinks.github.trim() !== "" && (
+        <a
+          {...styles}
+          className="general-btn"
+          href={socialMediaLinks.github}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          More Projects (Github)
+        </a>
+      )}
       <br />
       <br />
       <Footer theme={props.theme} onToggle={props.onToggle} />

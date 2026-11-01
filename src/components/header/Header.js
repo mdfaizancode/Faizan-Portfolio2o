@@ -100,7 +100,7 @@ function Header(props) {
                 Education and Certifications
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 className="xp"
                 to="/experience"
@@ -110,7 +110,7 @@ function Header(props) {
               >
                 Experience
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 className="projects"
@@ -133,7 +133,7 @@ function Header(props) {
                 Contact and Resume
               </NavLink>
             </li>
-          {/* <li>
+            {/* <li>
               <a
                 className="cr"
                 target="_blank"
