@@ -76,3 +76,43 @@ body {
     line-height: normal;
   }
 }
+
+/* ===== Floating animations for page illustrations ===== */
+.skills-image-div > svg,
+.heading-img-div > svg,
+.projects-heading-img-div > svg,
+.blog-heading-img-div > svg {
+  animation: illustrationFloat 5.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.heading-img-div > svg {
+  animation-delay: 0.9s;
+}
+
+.projects-heading-img-div > svg {
+  animation-delay: 1.8s;
+}
+
+.blog-heading-img-div > svg {
+  animation-delay: 2.7s;
+}
+
+@keyframes illustrationFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills-image-div > svg,
+  .heading-img-div > svg,
+  .projects-heading-img-div > svg,
+  .blog-heading-img-div > svg {
+    animation: none;
+  }
+}

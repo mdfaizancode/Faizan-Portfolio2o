@@ -11,7 +11,7 @@ const settings = {
 const greeting = {
   title: "Hello.",
   title2: "MD Faizan",
-  logo_name: "Faizan </>",
+  logo_name: "Faizan ",
   nickname: "mdfaizancode",
   full_name: "MD Faizan",
   subTitle:
@@ -22,9 +22,10 @@ const greeting = {
 
 const socialMediaLinks = {
   /* Your Social Media Link */
-  github: " ",
+  github: "https://github.com/mdfaizancode",
   linkedin: "https://www.linkedin.com/in/mdfaizancode",
   gmail: "codefaizan999@gmail.com",
+  whatsapp: "https://wa.me/919990831124",
   gitlab: " ",
   facebook: " ",
   twitter: "/",
@@ -168,36 +169,22 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "Full Stack Web Development",
-      subtitle: "Certification",
-      logo_path: "cert_fullstack.png",
-      certificate_link: "",
-      alt_name: "Full Stack Web Development Certification",
-      color_code: "#0B8043",
+      title: "Alpha (DSA with Java)",
+      subtitle: "Apna College",
+      image_path: "cert_alpha_dsa.jpg",
+      color_code: "#E8833A",
     },
     {
-      title: "Data Structures & Algorithms",
-      subtitle: "Certification",
-      logo_path: "cert_dsa.png",
-      certificate_link: "",
-      alt_name: "DSA Certification",
-      color_code: "#4285F4",
+      title: "Delta (Full Stack Web Development)",
+      subtitle: "Apna College",
+      image_path: "cert_delta_fullstack.jpg",
+      color_code: "#8B9A3D",
     },
     {
-      title: "AI Tools Expert",
-      subtitle: "Certification",
-      logo_path: "cert_aitools.png",
-      certificate_link: "",
-      alt_name: "AI Tools Expert Certification",
-      color_code: "#8E44AD",
-    },
-    {
-      title: "ADCA",
-      subtitle: "Advanced Diploma in Computer Applications",
-      logo_path: "cert_adca.png",
-      certificate_link: "",
-      alt_name: "ADCA Certification",
-      color_code: "#E8710A",
+      title: "AI Tools & ChatGPT Workshop",
+      subtitle: "be10x",
+      image_path: "cert_be10x_ai.jpg",
+      color_code: "#6B6B6B",
     },
   ],
 };
@@ -215,7 +202,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "profile.png",
     description:
-      "I'm open to internships and entry-level Web Development opportunities. Feel free to reach out — I'll get back to you as soon as I can. 📩 codefaizan999@gmail.com | 📞 +91 9990831124",
+      "I'm open to internships and entry-level Web Development opportunities. Feel free to reach out — I'll get back to you as soon as I can. 📩 codefaizan999@gmail.com",
   },
   blogSection: {
     title: "LinkedIn",
@@ -231,6 +218,8 @@ const projects = {
     {
       name: "Trade2Day — Stock Trading Website",
       url: "https://trade2dayfron-theta.vercel.app",
+      image_path: "project_trade2day.png",
+      color_code: "#22C55E",
       description:
         "A full-stack stock trading platform with live market-style data display, buy/sell order simulation and portfolio tracking. Designed REST APIs for trade execution and user holdings, with Redux for state management and Mongoose for MongoDB data modeling.",
       languages: [
@@ -244,6 +233,8 @@ const projects = {
     {
       name: "BookMyVilla — Villa Booking Platform",
       url: "https://bookmyvilla.onrender.com",
+      image_path: "project_bookmyvilla.png",
+      color_code: "#F59E0B",
       description:
         "A full-stack villa listing and booking web application with CRUD functionality for listings and a responsive UI. Built REST APIs and MongoDB models for villas, users and bookings.",
       languages: [
@@ -256,6 +247,8 @@ const projects = {
     {
       name: "Jarves — AI-Powered Web App",
       url: "https://jarves6-i.onrender.com",
+      image_path: "project_jarves.png",
+      color_code: "#8B5CF6",
       description:
         "An AI-powered web app built with a Vite/React frontend and a backend API, deployed on Render. Handled deployment, environment configuration and troubleshooting for a live production build.",
       languages: [
@@ -267,6 +260,8 @@ const projects = {
     {
       name: "LetsMeet — Real-Time Meeting App",
       url: "https://letsmeetss.onrender.com",
+      image_path: "project_letsmeet.png",
+      color_code: "#14B8A6",
       description:
         "A full-stack real-time MERN application for online meetings and live interaction between users. Implemented backend services and the frontend interface with real-time communication over WebSockets.",
       languages: [

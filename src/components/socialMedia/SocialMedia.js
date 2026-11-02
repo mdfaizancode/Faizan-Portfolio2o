@@ -25,6 +25,28 @@ export default function socialMedia() {
         <i className="fab fa-linkedin-in"></i>
         <span></span>
       </a>
+      {socialMediaLinks.whatsapp && (
+        <a
+          href={socialMediaLinks.whatsapp}
+          className="icon-button whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-whatsapp"></i>
+          <span></span>
+        </a>
+      )}
+      {socialMediaLinks.gmail.trim() !== "" && (
+        <a
+          href={`mailto:${socialMediaLinks.gmail}`}
+          className="icon-button email"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fas fa-envelope"></i>
+          <span></span>
+        </a>
+      )}
     </div>
   );
 }

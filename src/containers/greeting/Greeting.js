@@ -31,6 +31,7 @@ export default function Greeting(props) {
               >
                 <span>I'm </span>
                 <span style={{ color: theme.accentColor }}>
+                  {" "}
                   {greeting.full_name}.{" "}
                 </span>
                 {greeting.subTitle}

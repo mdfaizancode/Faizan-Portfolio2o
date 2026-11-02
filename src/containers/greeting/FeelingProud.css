@@ -1,307 +1,158 @@
-#eyeb {
-  transform: translateY(-9px);
-  animation: eyeb 5s linear infinite;
+/* ===== Smooth character animations (home page cartoon boy) ===== */
+
+/* Whole character floats gently up and down */
+.greeting-image-div svg {
+  animation: characterFloat 6s ease-in-out infinite;
+  will-change: transform;
 }
 
-@keyframes eyeb {
-  0% {
-    transform: translateY(-10);
-    -ms-transform: translateY(-10);
-    -moz-transform: translateY(-10);
-  }
-
-  25% {
-    transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-  }
-
-  75% {
-    transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-  }
-
+@keyframes characterFloat {
+  0%,
   100% {
-    transform: translateY(10);
-    -moz-transform: translateY(10);
-    -ms-transform: translateY(10);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
   }
 }
 
-#mouth {
-  transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  -moz-transform: translateY(-5px);
-  animation: mouth 5s linear infinite;
-}
-
-@keyframes mouth {
-  0% {
-    transform: translateY(-10);
-    -ms-transform: translateY(-10);
-    -moz-transform: translateY(-10);
-  }
-
-  25% {
-    transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-  }
-
-  75% {
-    transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-  }
-
-  100% {
-    transform: translateY(10);
-    -moz-transform: translateY(10);
-    -ms-transform: translateY(10);
-  }
-}
-
-#eyey2 {
-  transform: translateX(-2px);
-  -moz-transform: translateX(-2px);
-  -ms-transform: translateX(-2px);
-  animation: eyey2 4s linear infinite;
-}
-
-@keyframes eyey2 {
-  0% {
-    transform: translateX(-2);
-    -ms-transform: translateX(-2);
-    -moz-transform: translateX(-2);
-  }
-
-  25% {
-    transform: translateX(2px);
-    -moz-transform: translateX(2px);
-    -ms-transform: translateX(2px);
-  }
-
-  75% {
-    transform: translateX(-2px);
-    -ms-transform: translateX(-2px);
-    -moz-transform: translateX(-2px);
-  }
-
-  100% {
-    transform: translateX(2);
-    -ms-transform: translateX(2);
-    -moz-transform: translateX(2);
-  }
-}
-
-#notebook {
-  transform: translateY(-4px);
-  -moz-transform: translateY(-4px);
-  -ms-transform: translateY(-4px);
-  animation: notebook 6s linear infinite;
-}
-
-@keyframes notebook {
-  0% {
-    transform: translateY(-4);
-  }
-
-  25% {
-    transform: translateY(0px);
-  }
-
-  75% {
-    transform: translateY(0px);
-  }
-
-  100% {
-    transform: translateY(4);
-  }
-}
-
-#legs {
-  transform: translateY(-9px);
-  animation: legs 6s infinite;
-}
-
-@keyframes legs {
-  0% {
-    transform: translateY(-10);
-    -ms-transform: translateY(-10);
-    -moz-transform: translateY(-10);
-  }
-
-  25% {
-    transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-  }
-
-  75% {
-    transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-  }
-
-  100% {
-    transform: translateY(10);
-    -moz-transform: translateY(10);
-    -ms-transform: translateY(10);
-  }
-}
-
-#pe {
-  animation: pe 6s infinite;
-}
-
-@keyframes pe {
-  0% {
-    transform: rotateX(2deg);
-    -ms-transform: rotateX(2deg);
-    -moz-transform: rotateX(2deg);
-  }
-}
-
-#shirt {
-  transform: translateY(-9px);
-  -ms-transform: translateY(-9px);
-  -moz-transform: translateY(-9px);
-  animation: shirt 6s infinite;
-}
-
-@keyframes shirt {
-  0% {
-    transform: translateY(-10);
-    -ms-transform: translateY(-10);
-    -moz-transform: translateY(-10);
-  }
-
-  25% {
-    transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-  }
-
-  75% {
-    transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-  }
-
-  100% {
-    transform: translateY(10);
-    -moz-transform: translateY(10);
-    -ms-transform: translateY(10);
-  }
-}
-
-#tshirt {
-  transform: translateY(-9px);
-  -ms-transform: translateY(-9px);
-  -moz-transform: translateY(-9px);
-  animation: tshirt 6s infinite;
-}
-
-@keyframes tshirt {
-  0% {
-    transform: translateY(-10);
-    -ms-transform: translateY(-10);
-    -moz-transform: translateY(-10);
-  }
-
-  25% {
-    transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-  }
-
-  75% {
-    transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-  }
-
-  100% {
-    transform: translateY(10);
-    -moz-transform: translateY(10);
-    -ms-transform: translateY(10);
-  }
-}
-
+/* Head sways slowly, like he's looking around the screen */
 #head {
-  transform: translateY(-9px);
-  -ms-transform: translateY(-9px);
-  -moz-transform: translateY(-9px);
-  animation: head 6s infinite;
+  animation: headSway 7s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 85%;
 }
 
-@keyframes head {
-  0% {
-    transform: translateY(-8);
-  }
-
-  25% {
-    transform: translateY(0px);
-  }
-
-  75% {
-    transform: translateY(0px);
-  }
-
+@keyframes headSway {
+  0%,
   100% {
-    transform: translateY(8);
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(1.6deg);
+  }
+  70% {
+    transform: rotate(-1.4deg);
   }
 }
 
-#ears {
-  animation: ears 6s linear infinite;
+/* Eyes look left, right and centre smoothly */
+#eyey2 {
+  animation: lookAround 5s ease-in-out infinite;
 }
 
-@keyframes ears {
-  0% {
-    transform: translateY(-10);
-    -ms-transform: translateY(-10);
-    -moz-transform: translateY(-10);
-  }
-
-  25% {
-    transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-  }
-
-  75% {
-    transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-  }
-
+@keyframes lookAround {
+  0%,
+  18%,
   100% {
-    transform: translateY(10);
-    -moz-transform: translateY(10);
-    -ms-transform: translateY(10);
+    transform: translateX(0);
+  }
+  36%,
+  54% {
+    transform: translateX(3px);
+  }
+  72%,
+  90% {
+    transform: translateX(-3px);
   }
 }
 
+/* Eyes blink every few seconds */
+#circle113,
+#circle115 {
+  animation: blink 4.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes blink {
+  0%,
+  91%,
+  96%,
+  100% {
+    transform: scaleY(1);
+  }
+  93.5% {
+    transform: scaleY(0.12);
+  }
+}
+
+/* Eyebrows raise occasionally (keeps the template's -9px base offset) */
+#eyeb {
+  animation: browRaise 6s ease-in-out infinite;
+}
+
+@keyframes browRaise {
+  0%,
+  30%,
+  46%,
+  100% {
+    transform: translateY(-9px);
+  }
+  38% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Mouth moves subtly, like he's smiling/talking (base offset -5px) */
+#mouth {
+  animation: mouthMove 5s ease-in-out infinite;
+}
+
+@keyframes mouthMove {
+  0%,
+  100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-6.5px);
+  }
+}
+
+/* Arms bounce softly while "typing", slightly out of phase */
+#arms {
+  animation: armBob 3s ease-in-out -1.2s infinite;
+}
+
+@keyframes armBob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2.5px);
+  }
+}
+
+/* Ground shadow breathes with the float */
 #brows {
-  animation: brows 6.1s linear infinite;
+  animation: shadowBreathe 6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
-@keyframes brows {
-  0% {
-    transform: scale(0.96);
-  }
-
-  25% {
-    transform: scale(1);
-  }
-
-  75% {
-    transform: scale(1);
-  }
-
+@keyframes shadowBreathe {
+  0%,
   100% {
-    transform: scale(0.96);
+    transform: scaleX(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scaleX(0.92);
+    opacity: 0.13;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .greeting-image-div svg,
+  #head,
+  #eyey2,
+  #circle113,
+  #circle115,
+  #eyeb,
+  #mouth,
+  #arms,
+  #brows {
+    animation: none;
   }
 }
