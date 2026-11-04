@@ -186,6 +186,12 @@ const certifications = {
       image_path: "cert_be10x_ai.jpg",
       color_code: "#6B6B6B",
     },
+    {
+      title: "ADCA (Advance Diploma in Computer Application)",
+      subtitle: "ADCA Course — Scored 48/50",
+      image_path: "cert_adca.jpg",
+      color_code: "#B02A30",
+    },
   ],
 };
 

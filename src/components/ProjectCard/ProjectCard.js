@@ -18,7 +18,6 @@ export default function ProjectCard({ repo: project, theme }) {
             "--project-color": project.color_code || "#fc1056",
             backgroundColor: theme.body,
           }}
-          key={project.name}
           onClick={() => openRepoinNewTab(project.url)}
         >
           <div className="project-img-wrap">

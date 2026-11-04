@@ -57,11 +57,11 @@
 
 .repo-cards-div-main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 32px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 60px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 56px 80px;
+  max-width: 1036px;
+  margin: 60px auto 0;
+  padding: 0 20px;
 }
 
 @media (max-width: 1380px) {
@@ -97,9 +97,8 @@
   }
 
   .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-left: 10px;
-    margin-right: 10px;
+    grid-template-columns: 1fr;
+    gap: 30px;
     margin-top: 30px;
   }
 }

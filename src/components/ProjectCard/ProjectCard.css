@@ -2,6 +2,11 @@
   height: 100%;
 }
 
+/* Fade (react-reveal) wrapper sits between the grid cell and the card */
+.project-card-outer > div {
+  height: 100%;
+}
+
 .project-gallery-card {
   height: 100%;
   border-radius: 14px;
@@ -29,7 +34,7 @@
 
 .project-img-wrap img {
   width: 100%;
-  height: 220px;
+  height: 185px;
   object-fit: cover;
   object-position: top;
   display: block;
@@ -58,9 +63,9 @@
 .project-visit-text {
   color: #ffffff;
   font-family: "Google Sans Regular";
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: 1px;
-  padding: 10px 22px;
+  padding: 8px 18px;
   border: 2px solid #ffffff;
   border-radius: 30px;
   background: rgba(0, 0, 0, 0.35);
@@ -73,11 +78,11 @@
 }
 
 .project-caption {
-  padding: 20px 22px 24px;
+  padding: 15px 18px 18px;
 }
 
 .project-name {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.5px;
   line-height: 1.25;
@@ -86,14 +91,14 @@
 }
 
 .project-description {
-  font-size: 15px;
-  line-height: 1.55;
+  font-size: 13.5px;
+  line-height: 1.5;
   font-family: "Google Sans Regular";
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  margin: 10px 0 16px;
+  margin: 8px 0 12px;
 }
 
 .project-languages {
@@ -103,13 +108,13 @@
 
 @media (max-width: 768px) {
   .project-img-wrap img {
-    height: 180px;
+    height: 165px;
   }
   .project-name {
-    font-size: 18px;
+    font-size: 17px;
   }
   .project-description {
-    font-size: 14px;
+    font-size: 13px;
     -webkit-line-clamp: 4;
   }
 }
