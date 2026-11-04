@@ -71,7 +71,11 @@ function Header(props) {
             <span className="logo-name" style={{ color: theme.text }}>
               {" "}
               {greeting.logo_name}
-              <span style={{ color: theme.accentColor }}>.|.</span>
+              {/* <i class="fa-brands fa-studiovinari"></i> */}
+              <span style={{ color: theme.accentColor }}>
+                .|.
+                {/* <i className="fab fa-studiovinari"></i> */}
+              </span>
             </span>
             <span style={{ color: theme.text }}></span>
           </NavLink>
