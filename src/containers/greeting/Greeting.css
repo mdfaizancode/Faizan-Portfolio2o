@@ -70,6 +70,20 @@
   cursor: pointer;
 }
 
+.greeting-text-div .social-media-div {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.greeting-text-div .icon-button i {
+  margin: 0 8px 8px;
+}
+
+.portfolio-repo-btn-div {
+  /* the inline anchor paints ~12px above its box, so the wrapper carries the gap */
+  margin-top: 40px;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
@@ -112,5 +126,11 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    /* the anchor is a flex item here, so its own 25px margin-top applies */
+    margin-top: 0;
+  }
+
+  .greeting-text-div .social-media-div {
+    margin-bottom: 8px;
   }
 }

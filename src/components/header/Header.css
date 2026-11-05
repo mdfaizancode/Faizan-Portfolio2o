@@ -1,10 +1,19 @@
 /* header */
 
+.header-sticky {
+  position: sticky;
+  top: 0;
+  /* under the custom cursor, which react-cursor-custom pins at z-index 999 */
+  z-index: 800;
+  width: 100%;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.14);
+}
+
 .header {
   display: block;
   max-width: 95%;
   padding: 20px 10px;
-  margin: -10px auto;
+  margin: 0 auto;
 }
 
 .header ul {

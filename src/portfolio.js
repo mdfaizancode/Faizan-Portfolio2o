@@ -1,7 +1,6 @@
 const settings = {
-  isSplash: false,
   useCustomCursor: true,
-  googleTrackingID: "UA-174238252-2",
+  googleTrackingID: "",
 };
 
 //Home Page
@@ -13,7 +12,7 @@ const greeting = {
   full_name: "MD Faizan",
   subTitle:
     "Aspiring Full Stack Web Developer (MERN Stack) — B.Tech CSE student at AKTU building projects with React, Next.js, Node.js, Docker & CI/CD. 🚀",
-  resumeLink: "/resume.pdf",
+  resumeLink: "resume.pdf",
   mail: "codefaizan999@gmail.com",
 };
 
@@ -23,10 +22,6 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/mdfaizancode",
   gmail: "codefaizan999@gmail.com",
   whatsapp: "https://wa.me/919990831124",
-  gitlab: " ",
-  facebook: " ",
-  twitter: "/",
-  instagram: "/",
 };
 
 const skills = {
@@ -42,7 +37,7 @@ const skills = {
       softwareSkills: [
         {
           skillName: "Java",
-          fontAwesomeClassname: "simple-icons:java",
+          fontAwesomeClassname: "simple-icons:openjdk",
           style: { color: "#ED8B00" },
         },
         {
@@ -197,7 +192,6 @@ const projectsHeader = {
   title: "Projects",
   description:
     "My projects make use of a vast variety of latest technology tools. My best experience is to create full-stack website projects. Below are some of my projects — each one is live and deployed.",
-  avatar_image_path: "projects_image.svg",
 };
 
 const contactPageData = {
@@ -206,13 +200,6 @@ const contactPageData = {
     profile_image_path: "profile.png",
     description:
       "I'm open to internships and entry-level Web Development opportunities. Feel free to reach out — I'll get back to you as soon as I can. 📩 codefaizan999@gmail.com",
-  },
-  blogSection: {
-    title: "LinkedIn",
-    subtitle:
-      "Let's connect professionally — I share my work and journey as an aspiring Full Stack Developer here.",
-    link: "https://www.linkedin.com/in/mdfaizancode/",
-    avatar_image_path: "blogs_image.svg",
   },
 };
 

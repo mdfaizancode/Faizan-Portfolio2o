@@ -4,21 +4,18 @@ import "./ProjectCard.css";
 import { Fade } from "react-reveal";
 
 export default function ProjectCard({ repo: project, theme }) {
-  function openRepoinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
   return (
     <div className="project-card-outer">
       <Fade bottom duration={2000} distance="40px">
-        <div
+        <a
           className="project-gallery-card"
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             "--project-color": project.color_code || "#fc1056",
             backgroundColor: theme.body,
           }}
-          onClick={() => openRepoinNewTab(project.url)}
         >
           <div className="project-img-wrap">
             <img
@@ -43,7 +40,7 @@ export default function ProjectCard({ repo: project, theme }) {
               <ProjectLanguages logos={project.languages} />
             </div>
           </div>
-        </div>
+        </a>
       </Fade>
     </div>
   );

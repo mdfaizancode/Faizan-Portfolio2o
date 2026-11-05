@@ -8,11 +8,14 @@
 }
 
 .project-gallery-card {
+  display: block;
   height: 100%;
   border-radius: 14px;
   overflow: hidden;
   cursor: pointer;
   text-align: left;
+  text-decoration: none;
+  color: inherit;
   border: 1px solid rgba(128, 128, 128, 0.25);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: transform 0.35s ease, box-shadow 0.35s ease,

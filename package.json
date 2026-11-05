@@ -2,7 +2,7 @@
   "private": true,
   "name": "opportfolio",
   "version": "1.2.0",
-  "homepage": "http://hrishi.tech/",
+  "homepage": ".",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
@@ -12,6 +12,7 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
     "baseui": "^12.2.0",
     "glamor": "^2.20.40",
     "react": "^16.8.0",

@@ -20,7 +20,7 @@ function ProjectLanguages(props) {
               >
                 <li
                   className="software-skill-inline-languages"
-                  name={logo.skillName}
+                  name={logo.name}
                 >
                   <span
                     className="iconify"

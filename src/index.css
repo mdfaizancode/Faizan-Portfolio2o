@@ -48,6 +48,45 @@ html,
 body {
   scroll-behavior: smooth;
 }
+/* Keep anchored sections clear of the sticky header when nav is clicked.
+   --header-h is published by Header.js because the bar height is viewport
+   dependent (108px on phones, ~171px around 769px). */
+#home,
+#education,
+#projects,
+#contact {
+  scroll-margin-top: var(--header-h, 98px);
+}
+
+/* ===== Breathing room between the one-page sections ===== */
+/* body is a flex row in global.js, so #root must be given the full width
+   or the whole site collapses into a left-pinned column on wide screens */
+#root {
+  width: 100%;
+}
+
+#home {
+  margin-top: 44px;
+}
+
+#skills {
+  margin-top: 96px;
+}
+
+#educations,
+#certs,
+#projects {
+  margin-top: 150px;
+}
+
+#education,
+#contact {
+  margin-top: 120px;
+}
+
+#contact {
+  margin-bottom: 40px;
+}
 body {
   margin: 0;
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
@@ -80,8 +119,7 @@ body {
 /* ===== Floating animations for page illustrations ===== */
 .skills-image-div > svg,
 .heading-img-div > svg,
-.projects-heading-img-div > svg,
-.blog-heading-img-div > svg {
+.projects-heading-img-div > svg {
   animation: illustrationFloat 5.5s ease-in-out infinite;
   will-change: transform;
 }
@@ -92,10 +130,6 @@ body {
 
 .projects-heading-img-div > svg {
   animation-delay: 1.8s;
-}
-
-.blog-heading-img-div > svg {
-  animation-delay: 2.7s;
 }
 
 @keyframes illustrationFloat {
@@ -111,8 +145,28 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .skills-image-div > svg,
   .heading-img-div > svg,
-  .projects-heading-img-div > svg,
-  .blog-heading-img-div > svg {
+  .projects-heading-img-div > svg {
     animation: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    margin-top: 20px;
+  }
+  #skills {
+    margin-top: 60px;
+  }
+  #educations,
+  #certs,
+  #projects {
+    margin-top: 100px;
+  }
+  #education,
+  #contact {
+    margin-top: 84px;
+  }
+  #contact {
+    margin-bottom: 20px;
   }
 }
