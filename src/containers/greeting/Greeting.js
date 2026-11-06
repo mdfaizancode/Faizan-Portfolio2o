@@ -34,7 +34,7 @@ export default function Greeting(props) {
                 </span>
                 {greeting.subTitle}
               </p>
-              <SocialMedia />
+              <SocialMedia hideWhatsapp />
               <div className="portfolio-repo-btn-div">
                 <a {...styles} className="button" href="#contact">
                   Contact Me

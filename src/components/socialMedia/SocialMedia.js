@@ -2,7 +2,7 @@ import React from "react";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
 
-export default function socialMedia() {
+export default function socialMedia({ hideWhatsapp = false }) {
   return (
     <div className="social-media-div">
       {socialMediaLinks.github.trim() !== "" && (
@@ -25,7 +25,7 @@ export default function socialMedia() {
         <i className="fab fa-linkedin-in"></i>
         <span></span>
       </a>
-      {socialMediaLinks.whatsapp && (
+      {!hideWhatsapp && socialMediaLinks.whatsapp && (
         <a
           href={socialMediaLinks.whatsapp}
           className="icon-button whatsapp"
